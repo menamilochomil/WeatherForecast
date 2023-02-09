@@ -24,8 +24,8 @@ const getData = (data) => {
     .then(data => {
 
       //Rendering the data for the current date
-      document.getElementById('current-temp').innerText = 'Temperature ' + data.daily[0].temp.min + '° /' + data.daily[0].temp.max + '°'
-      document.getElementById('current-humidity').innerText = 'Humidity ' + data.daily[0].humidity + '%'
+      document.getElementById('current-temp').innerText = 'Temperature: ' + data.daily[0].temp.min + '° /' + data.daily[0].temp.max + '°'
+      document.getElementById('current-humidity').innerText = 'Humidity: ' + data.daily[0].humidity + '%'
       document.getElementById('current-icon').src = 'https://openweathermap.org/img/wn/' + data.daily[0].weather[0].icon + '.png';
       document.getElementById('current-description').innerText = data.daily[0].weather[0].description
 
