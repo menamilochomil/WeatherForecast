@@ -8,22 +8,22 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
+    
+    <header >
         <h1 id = "header-one">Weather Forecast</h1>
     </header>
-
     <main class="container-weather">
-        <form role="search" id="search-weather-form">
+        <form role="search" id="search-weather-form" >
             <input type="search" id= "search-city" type="text" placeholder="Search" size="30">
-            <button id="search-weather-btn" class="owl-btn"> Search </button>
-          </form>
+            <button>Search</button>
+        </form>
         
         <section class="current-weather">
             <p id="current-name"></p>
             <img src="" alt="icon" id="current-icon" />
-            <p id="current-temp"></p>
-            <p id="current-humidity"></p>
-            <p id="current-description"></p>
+            <p id="current-temp" class="items-current "></p>
+            <p id="current-humidity" class="items-current "></p>
+            <p id="current-description" class="items-current "></p>
         </section>
         <section id="weekly-weather-section" >
             <p id="weekly-weather"></p>
