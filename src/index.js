@@ -35,12 +35,10 @@ const getData = (data) => {
         const unix = data.daily[i].dt
         const date = new Date(unix * 1000).toLocaleDateString('en-US');
         const today = new Date().toLocaleDateString('en-US')
-        //Aún no funciona. Considerar no condicionarlo
+        //I could't test it yet
         // if (date === today) {
         //   return ''
         // } else {
-
-          // const day = date.getDay()
 
           container += `
               <p>Date:${date} </p>
