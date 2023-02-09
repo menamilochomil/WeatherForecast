@@ -13,7 +13,11 @@
     </header>
 
     <main class="container-weather">
-        <input id= "search-city" type="text" placeholder="Search">
+        <form role="search" id="search-weather-form">
+            <input type="search" id= "search-city" type="text" placeholder="Search" size="30">
+            <button id="search-weather-btn" class="owl-btn"> Search </button>
+          </form>
+        
         <section class="current-weather">
             <p id="current-name"></p>
             <img src="" alt="icon" id="current-icon" />
@@ -21,7 +25,10 @@
             <p id="current-humidity"></p>
             <p id="current-description"></p>
         </section>
-        <section id="weekly-weather"></section>
+        <section id="weekly-weather-section" >
+            <p id="weekly-weather"></p>
+
+        </section>
     </main>
     
     <footer class="footer-reservamos">
