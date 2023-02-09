@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+    <header >
+        <h1 id = "header-one">Weather Forecast</h1>
+    </header>
+    <main class="container-weather">
+        <form role="search" id="search-weather-form" >
+            <input type="search" id= "search-city" type="text" placeholder="Search" size="30">
+            <button>Search</button>
+        </form>
+        
+        <section class="current-weather">
+            <p id="current-name"></p>
+            <img src="" alt="icon" id="current-icon" />
+            <p id="current-temp" class="items-current "></p>
+            <p id="current-humidity" class="items-current "></p>
+            <p id="current-description" class="items-current "></p>
+        </section>
+        <section id="weekly-weather-section" >
+            <p id="weekly-weather"></p>
+
+        </section>
+    </main>
+    
+    <footer class="footer-reservamos">
+        <p>Reservamos 2023 by Jimena López</p>
+    </footer>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
